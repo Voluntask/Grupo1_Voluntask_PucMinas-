@@ -1,0 +1,77 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --principal: #ECBA00;
+    --secundaria: #88D3AB
+    }
+.more{ 
+    padding: 0 1.5em 0 1.5em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 0;
+    z-index: 1;
+    color: #fff;
+    transition: 0.5s ease-in;
+    transition-delay: 0.5s;
+}
+.centralizar {
+    justify-items: center;
+}
+.cartao 
+{
+    border: 1px #383737 solid;
+    padding: 20px ;
+    border-top: 0;
+    width: 94%;
+    
+
+}
+.cartao .teste{
+    display: flex;
+
+    align-items: end;
+    
+    justify-content: end;
+}
+.more-opened{
+    padding: 1em 1em 1em 1em;
+    height: 80%;
+    border: 1px #383737 solid;
+    display: flex;
+    flex-direction: column;
+    
+}
+.more-opened a {
+    display: flex;
+    justify-content: flex-end;
+}
+.card{
+    background-color: var(--principal);
+}
+#inverter
+{
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.button
+{
+    background-color: var(--principal);
+    border:1px solid ;
+    color: #383737;
+    padding: 10px;
+    border-radius: 3px;
+    text-decoration: none;
+ }
+.button:hover
+{
+    background-color: var(--secundaria) ;
+    border:2px solid ;
+    color: black;
+ }
