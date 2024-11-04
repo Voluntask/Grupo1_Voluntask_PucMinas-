@@ -41,7 +41,6 @@ body{
 .more-opened{
     padding: 1em 1em 1em 1em;
     height: 80%;
-    border: 1px #383737 solid;
     display: flex;
     flex-direction: column;
     
@@ -52,13 +51,6 @@ body{
 }
 .card{
     background-color: var(--principal);
-}
-#inverter
-{
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
 }
 .button
 {
@@ -74,4 +66,25 @@ body{
     background-color: var(--secundaria) ;
     border:2px solid ;
     color: black;
+ }
+ .box
+ {
+     width: 49.3vw;
+     height: 100vh;
+     padding: 0;
+     margin:  0;
+     
+ }
+ .box-img
+ {
+     width: 100%;
+     height: 100%;
+     background-image: url(../assets/img/testeimg.jpg);
+     background-position: center;
+     background-size: cover;
+     -moz-transform: scaleX(-1);
+     -o-transform: scaleX(-1);
+     -webkit-transform: scaleX(-1);
+     transform: scaleX(-1);
+ 
  }
