@@ -1,0 +1,163 @@
+<html>
+ <head>
+  <title>
+   Voluntask - Crie sua conta
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+            flex-direction: row;
+        }
+        .left, .right {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .left {
+            background-color: #ffffff;
+        }
+        .right {
+            background-color: #8fd6a9;
+        }
+        .container {
+            background-color: #ffffff;
+            border: 2px solid #8fd6a9;
+            border-radius: 10px;
+            padding: 40px;
+            width: 400px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .container h2 {
+            text-align: center;
+            color: #000000;
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+        .input-group {
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 15px 15px 15px 40px;
+            border: 2px solid #f4a261;
+            border-radius: 5px;
+            outline: none;
+            font-size: 16px;
+        }
+        .input-group i {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #f4a261;
+        }
+        .btn {
+            width: 100%;
+            padding: 15px;
+            background-color: #f4a261;
+            border: none;
+            border-radius: 5px;
+            color: #ffffff;
+            font-size: 18px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .login-account {
+        text-align: center;
+        margin-top: 10px; /* Add some spacing above */
+      }
+        .login-account a {
+        color: #f4a261; /* Match the color with input icons */
+        text-decoration: none; /* Remove underline */
+        font-size: 16px; /* Match font size */
+      }
+        .login-account a:hover {
+        text-decoration: underline; /* Underline on hover for better UX */
+      }
+        .logo {
+            text-align: center;
+        }
+        .logo img {
+            width: 200px;
+        }
+        .logo h1 {
+            font-size: 24px;
+            color: #000000;
+            margin-top: 10px;
+        }
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+            .container {
+                width: 90%;
+                padding: 20px;
+            }
+            .container h2 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            .input-group input {
+                padding: 10px 10px 10px 35px;
+                font-size: 14px;
+            }
+            .btn {
+                padding: 10px;
+                font-size: 16px;
+            }
+        }
+  </style>
+ </head>
+
+ <body>
+  <div class="left">
+   <div class="logo">
+    <img alt="Voluntask Logo" height="200" src="/assets/voluntask-logo.png" width="200"/>
+   </div>
+  </div>
+  <div class="right">
+   <div class="container">
+    <h2>
+     Crie sua conta
+    </h2>
+    <div class="input-group">
+     <i class="fas fa-user">
+     </i>
+     <input placeholder="Usuário" type="text"/>
+    </div>
+    <div class="input-group">
+     <i class="fas fa-envelope">
+     </i>
+     <input placeholder="E-mail" type="email"/>
+    </div>
+    <div class="input-group">
+     <i class="fas fa-id-badge">
+     </i>
+     <input placeholder="WAITA ID" type="text"/>
+    </div>
+    <div class="input-group">
+     <i class="fas fa-lock">
+     </i>
+     <input placeholder="Senha" type="password"/>
+    </div>
+    <div class="input-group">
+     <i class="fas fa-lock">
+     </i>
+     <input placeholder="Confirmar senha" type="password"/>
+    </div>
+    <button class="btn">
+     Registrar
+    </button>
+    <div class="login-account">
+        <a href="">Já possui uma conta?</a>          
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
