@@ -5,7 +5,7 @@ const getUsers = () => {
 }
 
 const setUsers = (users) => {
-    localStorage.setItem("cadastro", JSON.stringify(users));
+    localStorage.setItem("users", JSON.stringify(users));
 } 
 
 form.addEventListener("submit", (event) => {
@@ -15,6 +15,7 @@ form.addEventListener("submit", (event) => {
     const email = document.getElementById("email").value
     const password = document.getElementById("password").value
     const confirmPassword = document.getElementById("confirm-password").value
+    const userType = document.getElementById("user_type").value
 
     if (password != confirmPassword) {
         alert("Senhas nao estao iguais")
@@ -24,7 +25,8 @@ form.addEventListener("submit", (event) => {
     const user = {
         username: username,
         email: email,
-        password: password
+        password: password,
+        type: userType
     }
 
     const users = getUsers()

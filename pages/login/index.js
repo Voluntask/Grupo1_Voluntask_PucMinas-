@@ -13,10 +13,11 @@ form.addEventListener("submit", (event) => {
 
     const users = getUsers()
 
-    const hasUser = users.some((user) => user.username == username && user.password == password)
+    const user = users.find((user) => user.username == username && user.password == password)
 
-    if (!hasUser) {
+    if (!user) {
         alert("Usuario nao encontrado")
     }
 
+    localStorage.setItem("logged_user", JSON.stringify(user));
 })

@@ -50,6 +50,15 @@
             outline: none;
             font-size: 16px;
         }
+
+        .input-group select {
+            width: 100%;
+            padding: 15px 15px 15px 40px;
+            border: 2px solid #f4a261;
+            border-radius: 5px;
+            outline: none;
+            font-size: 16px;
+        }
         .input-group i {
             position: absolute;
             left: 10px;
@@ -137,6 +146,14 @@
             <i class="fas fa-envelope">
             </i>
             <input placeholder="E-mail" type="email" id="email" required/>
+           </div>
+           <div class="input-group">
+            <i class="fa fa-info-circle">
+            </i>
+            <select id="user_type" required>
+                <option value="admin">Organizacao</option>
+                <option value="default">Normal</option>
+              </select>
            </div>
            <div class="input-group">
             <i class="fas fa-lock">
