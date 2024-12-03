@@ -37,6 +37,12 @@ const projects = getProjects()
 
 const projectsContainer = document.getElementById("projects")
 
+if (projects.length == 0) {
+    const h1 = document.createElement("h1")
+    h1.textContent = "Não há nenhum projeto cadastrado."
+    projectsContainer.append(h1)
+}
+
 
 for (let i = 0; i < projects.length; i++) {
     const projectEl = createProjectCard(projects[i])

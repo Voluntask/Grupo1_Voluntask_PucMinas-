@@ -42,6 +42,12 @@ const projectsIds = projectsUser.filter((p) => p.user == user.id).map((p) => +p.
 
 const projectsContainer = document.getElementById("projects")
 
+if (projectsIds.length == 0) {
+    const h1 = document.createElement("h1")
+    h1.textContent = "Você ainda não entroue em nenhum projeto."
+    projectsContainer.append(h1)
+}
+
 
 for (let i = 0; i < projects.length; i++) {
 
