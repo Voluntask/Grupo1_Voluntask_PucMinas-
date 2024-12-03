@@ -44,6 +44,8 @@ form.addEventListener("submit", (event) => {
 
 
     setProjects(projects)
+
+    window.location.href = "http://127.0.0.1:5500/pages/home";
 })
 
 
