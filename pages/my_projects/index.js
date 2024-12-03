@@ -44,7 +44,7 @@ const projectsContainer = document.getElementById("projects")
 
 if (projectsIds.length == 0) {
     const h1 = document.createElement("h1")
-    h1.textContent = "Você ainda não entroue em nenhum projeto."
+    h1.textContent = "Você ainda não entrou em nenhum projeto."
     projectsContainer.append(h1)
 }
 
