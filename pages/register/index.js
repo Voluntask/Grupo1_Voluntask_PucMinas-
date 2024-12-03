@@ -22,6 +22,15 @@ form.addEventListener("submit", (event) => {
         return
     }
 
+    const users = getUsers()
+
+    const hasUser = users.find((user) => user.username == username)
+
+    if (hasUser) {
+        alert("Ja existe um usuario com esse nome.")
+        return
+    }
+
     const user = {
         username: username,
         email: email,
@@ -29,7 +38,6 @@ form.addEventListener("submit", (event) => {
         type: userType
     }
 
-    const users = getUsers()
 
     users.push({
         ...user,
@@ -37,4 +45,8 @@ form.addEventListener("submit", (event) => {
     })
 
     setUsers(users)
+
+    localStorage.setItem("logged_user", JSON.stringify(user));
+    
+    window.location.href = "http://127.0.0.1:5500/pages/home";
 })

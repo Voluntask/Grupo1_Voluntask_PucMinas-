@@ -17,7 +17,10 @@ form.addEventListener("submit", (event) => {
 
     if (!user) {
         alert("Usuario nao encontrado")
+        return
     }
 
     localStorage.setItem("logged_user", JSON.stringify(user));
+    
+    window.location.href = "http://127.0.0.1:5500/pages/home";
 })
