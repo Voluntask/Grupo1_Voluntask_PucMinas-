@@ -33,6 +33,8 @@ function getInProject(buttonProject) {
     projectsUser.push(projectUser)
 
     localStorage.setItem("projects_user", JSON.stringify(projectsUser));
+
+    alert("Agora você faz parte desse projeto !")
 }
 
 

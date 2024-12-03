@@ -46,7 +46,7 @@ form.addEventListener("submit", (event) => {
 
     setUsers(users)
 
-    localStorage.setItem("logged_user", JSON.stringify(user));
+    localStorage.setItem("logged_user", JSON.stringify({...user, id: users.length +1}));
     
     window.location.href = "http://127.0.0.1:5500/pages/home";
 })
