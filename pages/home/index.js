@@ -19,7 +19,13 @@ const createProjectCard = (project) => {
     button.classList.add("card-button")
 
     header.textContent = project.name
-    description.textContent = project.description
+    
+    // Limita a descrição a 200 caracteres
+    const truncatedDescription = project.description.length > 200 
+        ? project.description.substring(0, 200) + "..." 
+        : project.description;
+
+    description.textContent = truncatedDescription
     button.textContent = "Saiba mais"
     button.href = `/pages/project/?id=${project.id}`
 
@@ -43,18 +49,14 @@ if (projects.length == 0) {
     projectsContainer.append(h1)
 }
 
-
 for (let i = 0; i < projects.length; i++) {
     const projectEl = createProjectCard(projects[i])
 
     projectsContainer.appendChild(projectEl)
-
 }
 
 if(user.type == "admin") {
     const nav = document.getElementById("menu-items")
-
-    console.log(nav)
 
     const item = document.createElement("li")
     const link = document.createElement("a")
